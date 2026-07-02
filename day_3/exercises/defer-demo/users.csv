@@ -1,0 +1,6 @@
+id,name,email,age,role
+101,Alice,alice@example.com,25,Super Admin
+102,Bob,bob@example.com,30,User
+103,Charlie,charlie@example.com,22,User
+104,Dave,dave@example.com,45,Manager
+105,Eve,eve@example.com,28,User
