@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: go-user-api
+    ports:
+      - "${API_PORT}:${API_PORT}"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_ADDR=${REDIS_HOST}:${REDIS_PORT} 
+
+  redis:
+    image: redis:7-alpine
+    container_name: docker-redis-cache
+    ports:
+      - "${REDIS_EXTERNAL_PORT}:${REDIS_PORT}"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:

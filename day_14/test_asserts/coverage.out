@@ -1,0 +1,8 @@
+mode: set
+asserts/main.go:15.62,16.16 1 1
+asserts/main.go:16.16,18.3 1 0
+asserts/main.go:19.2,19.14 1 1
+asserts/main.go:19.14,21.3 1 1
+asserts/main.go:23.2,28.8 1 1
+asserts/main.go:31.48,34.2 2 1
+asserts/main.go:36.14,37.2 0 0
